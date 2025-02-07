@@ -388,3 +388,46 @@ footer {
     position: relative;
     padding: 100px;
 }
+/* Pour les petits écrans (mobiles) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%; /* Réduit la largeur du modal */
+        padding: 15px;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .radio-group {
+        flex-direction: column; /* Affiche les boutons radio en colonne */
+        align-items: flex-start;
+    }
+
+    .checkbox-container {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .close-btn {
+        font-size: 18px; /* Ajuste la taille du bouton de fermeture */
+    }
+
+    .form * {
+        margin-bottom: 30px; /* Réduit l'espace entre les éléments */
+    }
+
+    .titre-centre {
+        font-size: 18px;
+    }
+}
